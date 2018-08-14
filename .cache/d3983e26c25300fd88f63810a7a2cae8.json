@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"babel-register","loc":{"line":3,"column":25}}],"generated":{"js":"/* eslint max-len: 0 */\n// TODO: eventually deprecate this console.trace(\"use the `babel-register` package instead of `babel-core/register`\");\nmodule.exports = require(\"babel-register\");\n"},"hash":"b76890052ea753679342c1fcac2c0c1c"}

@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./_is-object","loc":{"line":1,"column":23}}],"generated":{"js":"var isObject = require('./_is-object');\nmodule.exports = function(it){\n  if(!isObject(it))throw TypeError(it + ' is not an object!');\n  return it;\n};"},"hash":"4abd90ee71f7b841f8db72e8939a9c62"}
