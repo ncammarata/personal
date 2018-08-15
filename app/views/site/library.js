@@ -38,7 +38,7 @@ class Book extends Component {
               <btn
                 onClick={() => {
                   const url = `http://www.gutenberg.org/ebooks/${id}.epub.noimages`
-                  window.location = `?bookUrl=${url}`
+                  window.location = `/read?bookUrl=${url}`
                 }}
               >
                 read
@@ -168,35 +168,7 @@ export default class Library extends Component {
     return (
       <Layout>
         <library>
-          <big>Your Library</big>
-          <row1>
-            {false && (
-              <quotes>
-                "he gave him a name, a cruel name that means half-formed.
-                Quasi-Modo"
-              </quotes>
-            )}
-          </row1>
-          <app>
-            <items>
-              <item $activeItem>Books</item>
-              <item>Analytics</item>
-              <item>Clubs</item>
-            </items>
-            <active>
-              <top>
-                <topInner>
-                  <input placeholder="search" />
-                  <add>Add EPUB</add>
-                </topInner>
-              </top>
-              <books>
-                {books.map((book, index) => (
-                  <Book {...book} index={index} />
-                ))}
-              </books>
-            </active>
-          </app>
+          <big>Your Library (in construction)</big>
         </library>
       </Layout>
     )

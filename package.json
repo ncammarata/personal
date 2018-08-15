@@ -4,9 +4,8 @@
   "main": "electron.js",
   "license": "MIT",
   "scripts": {
-    "serve": "parcel index.html",
-    "start-dev": "ELECTRON_START_URL=http://localhost:1234 electron .",
-    "start": "electron ."
+    "start": "node index.js",
+    "test": "node test.js"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",

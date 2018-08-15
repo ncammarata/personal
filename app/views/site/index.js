@@ -1,13 +1,18 @@
 import Logo from "./logo"
 import { ic_chevron_right } from "react-icons-kit/md/ic_chevron_right"
-
 import { Icon } from "react-icons-kit"
 
 class Btn extends Component {
+  state = { hover: false }
   show() {
     const { children } = this.props
     return (
-      <btn>
+      <btn
+        $hover={this.state.hover}
+        onMouseEnter={() => this.setState({ hover: true })}
+        onMouseLeave={() => this.setState({ hover: false })}
+        onClick={() => (window.location = "/library")}
+      >
         {children}{" "}
         <Icon
           style={{ position: "absolute", right: 3, top: 5 }}
@@ -19,8 +24,15 @@ class Btn extends Component {
   }
 
   styles = {
+    hover: {
+      boxShadow: `2px 6px 6px rgba(50,50,93,.3)`,
+      transform: `translateY(-1px)`,
+    },
     btn: {
+      userSelect: "none",
+      cursor: "pointer",
       position: "relative",
+      transition: `all 100ms ease-in`,
       flexFlow: "row",
       background: `#3ecf8e`,
       width: 185,
@@ -77,7 +89,7 @@ export default class Site extends Component {
               <under>
                 <svg class="text" width="100%" height="150" aria-hidden="true">
                   <path
-                    class="stroke"
+                    className="stroke"
                     style={{
                       transform: `scaleX(1.775)`,
                     }}
@@ -95,7 +107,7 @@ export default class Site extends Component {
             <h2s>
               <h2>Read More Books</h2>
               <h2>Have More Fun</h2>
-              <h2>Increase Retention</h2>
+              <h2>Improve Retention</h2>
             </h2s>
             <actions1>
               <Btn>Go to Library</Btn>
@@ -134,8 +146,8 @@ export default class Site extends Component {
                     .<br />
                     <br />
                     Shared reading is easier and more motivating than
-                    solo-reading, and is an approachable way to starting a
-                    reading habit. healthy reading habit.
+                    solo-reading, and is an approachable way to start a healthy
+                    reading habit.
                   </p>
                 </featIn>
               </feature>
@@ -161,7 +173,7 @@ export default class Site extends Component {
               <hr />
               <feature>
                 <featIn>
-                  <h3>Increase Retention</h3>
+                  <h3>Improve Retention</h3>
                   <p>
                     By 2018 the research is clear: the key to retention is
                     reflection and annotation.
@@ -384,7 +396,7 @@ export default class Site extends Component {
       display: "block",
     },
     screenshot: {
-      margin: "10px auto",
+      margin: "3px auto",
       marginBottom: -60,
     },
   }

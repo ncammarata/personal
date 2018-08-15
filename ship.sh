@@ -1,1 +1,1 @@
-surge ./built booksy.surge.sh
+surge ./built usebooksy.surge.sh

@@ -57,48 +57,16 @@ export default class Logo extends Component {
   }
 
   show() {
-    return <name>booksy</name>
-    return (
-      <logo>
-        <big className="ml5">
-          <icon>
-            <Icon size={22} icon={bonfire} />
-          </icon>
-          <row className="text-wrapper">
-            <span className="letters letters-left">Lively</span>
-            <span style={{ marginLeft: 1 }} className="letters letters-right">
-              shelf
-            </span>
-          </row>
-        </big>
-      </logo>
-    )
+    return <name onClick={() => (window.location = "/")}>booksy</name>
   }
 
   styles = {
     name: {
       fontFamily: `'Fredoka One', cursive`,
       color: "black",
-      marginTop: -3,
+      marginTop: -10,
+      cursor: "pointer",
       fontSize: 25,
-    },
-    logo: {
-      flexFlow: "row",
-    },
-    icon: {
-      marginTop: 4,
-      marginRight: 2,
-    },
-    row: {
-      flexFlow: "row",
-    },
-    big: {
-      position: "relative",
-      flexFlow: "row",
-    },
-    span: {
-      fontWeight: 600,
-      marginTop: 3,
     },
   }
 }

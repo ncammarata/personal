@@ -10,15 +10,15 @@ export default class Root extends Component {
   show() {
     const url = window.location + ""
 
-    if (url.indexOf("?bg") > -1) {
+    if (url.indexOf("/bg") > -1) {
       return <BG />
     }
 
-    if (url.indexOf("?library") > -1) {
+    if (url.indexOf("/library") > -1) {
       return <Library />
     }
 
-    if (url.indexOf("?book") > -1) {
+    if (url.indexOf("/read") > -1) {
       return <Book />
     }
 

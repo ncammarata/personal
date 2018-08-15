@@ -3,6 +3,7 @@ import { getBook, getTOC, getChapters, getTitle } from "./lib/book"
 import { smoothScrollTo } from "./helpers"
 import { omit, debounce, uniqBy, findIndex } from "lodash"
 
+/*
 const whale = require("../books/whale.epub")
 const dracula = require("../books/dracula.epub")
 const dorian = require("../books/dorian.epub")
@@ -14,6 +15,8 @@ const books = {
   dorian,
   alice,
 }
+*/
+const books = {}
 
 export default class Store {
   @observable
