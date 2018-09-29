@@ -7,7 +7,7 @@ let $viewStyle = null
 
 React.createElement = (type, oldProps, ...children) => {
   const props = { ...oldProps }
-  if (!includes(["div", "span"], type)) {
+  if (!includes(["div", "a", "b", "span"], type)) {
     if ((props.className || "").indexOf("flexEl") === -1) {
       props.className = `${props.className || ""} flexEl`
     }

@@ -1,4 +1,5 @@
 export const smoothScrollTo = function(endX, endY, duration) {
+  console.log("smooth")
   var startX = window.scrollX || window.pageXOffset,
     startY = window.scrollY || window.pageYOffset,
     distanceX = endX - startX,
@@ -50,9 +51,11 @@ export const showTooltip = target => {
     return true
   }
 
+  /*
   if (!inContent || (window.getSelection() + "").trim().length === 0) {
     return false
   }
+  */
 
   if (noTooltip) {
     return false

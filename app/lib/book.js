@@ -2,6 +2,7 @@ import JSZip from "jszip"
 import { includes, sortBy, last } from "lodash"
 import cheerio from "cheerio"
 import { parse } from "himalaya"
+import ePub from "epubjs"
 
 const getExtension = async (book, ext) => {
   const files = Object.keys(book.files) // an array of ZipEntry records
@@ -21,16 +22,22 @@ const getTOCRaw = async book => {
 
 export const getBook = async url => {
   const buffer = await (await fetch(url)).arrayBuffer()
-  const newZip = new JSZip()
-  const book = await newZip.loadAsync(buffer)
+  const book = ePub()
+  book.open(buffer)
   return book
+
+  //const newZip = new JSZip()
+  //const book = await newZip.loadAsync(buffer)
+  //return book
 }
 
 export const getTitle = async book => {
   const xml = await getExtension(book, "opf")
   // replace tag to make it searchable
   const $ = cheerio.load(xml.replace(/dc\:/g, "dcX"))
-  return $("dcXtitle").text()
+  return $("dcXtitle")
+    .eq(0)
+    .text()
 }
 
 export const getTOC = async book => {
@@ -87,6 +94,8 @@ export const getChapters = async book => {
     chapters.map(chapter => ({ ...chapter, index: toc.indexOf(chapter.name) })),
     "index",
   )
-  const final = sorted.map(({ text }) => text).slice(0, 10)
+
+  const final = sorted.map(({ text }) => text).slice(0, 20)
+
   return final
 }
