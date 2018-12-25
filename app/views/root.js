@@ -5,6 +5,7 @@ import Writing from "./writing"
 import Contact from "./contact"
 import Post from "./post"
 import Bookshelf from "./bookshelf"
+import Shelf from "./shelf"
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
 @observer

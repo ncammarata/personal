@@ -11,12 +11,15 @@ export default class Home extends Component {
       <home $mobile={mobile}>
         <bio>
           <p>
-            I like learning, machine learning, and explorable systems.
-            <br />
-            I'm currently taking time off to read and travel.
+            I like <a href="/bookshelf">learning</a>, machine learning, and
+            explorable systems.
           </p>
           <p>
-            I was most recently co-founder &amp; CEO of Founders Fund-backed{" "}
+            I'm working on machine learning interpretability at{" "}
+            <a href="http://openai.com">OpenAI</a>.
+          </p>
+          <p>
+            I previously was co-founder &amp; CEO of Founders Fund-backed{" "}
             <a target="_blank" href="http://tryorbit.com">
               Orbit
             </a>
@@ -43,7 +46,8 @@ export default class Home extends Component {
             >
               flipped classroom
             </a>{" "}
-            movement. We sold the company to enterprise learning platform{" "}
+            movement. We led the company to acquisition by enterprise learning
+            platform{" "}
             <a target="_blank" href="http://versal.com">
               Versal
             </a>{" "}

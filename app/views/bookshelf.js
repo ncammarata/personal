@@ -1,7 +1,10 @@
 export default class Bookshelf extends Component {
   show() {
     const books = `
+      # Whole Earth Catelog
       Salt: A World History
+      # The Dream Machine
+      On Food and Cooking
       Sapiens: A Brief History of Humankind
       Never Split The Difference 
       #How to Win Friends and Influence People
@@ -15,6 +18,7 @@ export default class Bookshelf extends Component {
       Altered Traits
       Deep Learning Book
       Zero to One
+      Surely You're Joking Mr. Feynman
       Superforecasting
       Lolita
       # Modernist Cuisine
@@ -26,12 +30,14 @@ export default class Bookshelf extends Component {
       History of Future Cities
       The Upside of Stress
       # The Diamond Age
+      Waking Up
+      Measure What Matters
+      Atomic Habits
       High Growth Handbook
       The Elephant in the Brain
       The Master Algorithm
       The Selfish Gene
       Hitchhikers Guide to the Galaxy
-
     `
 
     const bookList = books.split("\n").map(book => {

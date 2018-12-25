@@ -13,7 +13,7 @@ export default class Post extends Component {
     const { post } = this.state
 
     if (post === null) {
-      return <loading />
+      return <notFound>Post not Found</notFound>
     }
 
     if (post === false) {
@@ -33,9 +33,11 @@ export default class Post extends Component {
 
   styles = {
     post: {
-      margin: `0px 40px`,
+      margin: `0px 15px`,
       marginBottom: 20,
+      maxWidth: 650,
       display: "block",
+      paddingBottom: 30,
       width: `auto`,
     },
   }

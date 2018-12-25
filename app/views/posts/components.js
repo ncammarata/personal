@@ -5,7 +5,7 @@ export class Quote extends Component {
     return (
       <quote>
         <text>{text}</text>
-        <author>— {author}</author>
+        <author>{author}</author>
       </quote>
     )
   }
@@ -52,6 +52,7 @@ export class Example extends Component {
   styles = {
     example: {
       marginTop: 10,
+      marginBottom: 10,
       padding: `3px 10px`,
       color: "black",
       fontWeight: 400,
@@ -72,6 +73,21 @@ export class Example extends Component {
   }
 }
 
+export class H3 extends Component {
+  show() {
+    return <h3>{this.props.children}</h3>
+  }
+
+  styles = {
+    h3: {
+      fontWeight: 600,
+      fontSize: 18,
+      marginTop: 8,
+      marginBottom: 8,
+    },
+  }
+}
+
 export class H2 extends Component {
   show() {
     return <h2>{this.props.children}</h2>
@@ -86,6 +102,8 @@ export class H2 extends Component {
       borderTop: `1px solid rgba(0, 0, 0, 0.05)`,
       marginLeft: -5000,
       marginRight: -5000,
+      marginTop: 8,
+      marginBottom: 8,
       background: `rgba(0, 0, 0, 0.03)`,
     },
   }

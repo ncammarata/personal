@@ -23,6 +23,7 @@ export default class Writing extends Component {
   styles = {
     postName: {
       display: "block",
+      marginBottom: 5,
     },
     btn: {
       alignItems: "center",
