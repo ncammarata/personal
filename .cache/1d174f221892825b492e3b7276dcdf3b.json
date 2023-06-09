@@ -1,1 +1,0 @@
-{"dependencies":[],"generated":{"js":"module.exports = function(it){\n  return typeof it === 'object' ? it !== null : typeof it === 'function';\n};"},"hash":"ffb13be2669bb0d8aef9cae4a633ee44"}

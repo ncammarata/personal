@@ -6,28 +6,6 @@ const shelfSource = `
 Mindstorms
 # AI
 # Psychology
-Never Split The Difference 
-How to Win Friends and Influence People
-When Panic Attacks
-Feeling Good
-Superforecasting
-# Computing
-# Startups
-Zero to One
-Paul Graham
-Naval Ravikant
-Hackers and Painters
-# Cooking
-# People
-Leonardo Da Vinci - Walter Isaacson
-Becoming Steve Jobs
-# Places
-History of Future Cities
-# Mind
-The Doors of Perception and Heaven and Hell
-Acid Test: LSD, Ecstasy, and the Power to Heal
-# Stories
-Salt: A World History
 `
 
 const parseShelf = shelfSource => {

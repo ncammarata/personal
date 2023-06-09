@@ -1,1 +1,0 @@
-{"dependencies":[{"name":"./_fails","loc":{"line":2,"column":26}}],"generated":{"js":"// Thank's IE8 for his funny defineProperty\nmodule.exports = !require('./_fails')(function(){\n  return Object.defineProperty({}, 'a', {get: function(){ return 7; }}).a != 7;\n});"},"hash":"0dedac0652f8ddd357241f100fe06a5e"}

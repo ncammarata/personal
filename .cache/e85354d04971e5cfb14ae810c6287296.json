@@ -1,1 +1,0 @@
-{"dependencies":[],"generated":{"js":"module.exports = function(exec){\n  try {\n    return !!exec();\n  } catch(e){\n    return true;\n  }\n};"},"hash":"bf259cb40b2600d236b2508135ab3626"}

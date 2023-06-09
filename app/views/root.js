@@ -19,7 +19,7 @@ export default class Root extends Component {
           <top>
             {!mobile && (
               <Link to={`/`}>
-                <name>Nick Cammarata</name>
+                <name>Tolly Powell</name>
               </Link>
             )}
             <items>

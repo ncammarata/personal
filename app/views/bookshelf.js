@@ -1,43 +1,24 @@
 export default class Bookshelf extends Component {
   show() {
     const books = `
-      # Whole Earth Catelog
-      Salt: A World History
-      # The Dream Machine
-      On Food and Cooking
-      Sapiens: A Brief History of Humankind
-      Never Split The Difference 
-      #How to Win Friends and Influence People
-      #Leonardo Da Vinci - Walter Isaacson
-      Creativity Inc
-      Becoming Steve Jobs
-      Hackers and Painters
-      Mindstorms
-      The Doors of Perception and Heaven and Hell
-      Acid Test: LSD, Ecstasy, and the Power to Heal
-      Altered Traits
-      Deep Learning Book
+
       Zero to One
+      Cryptonomicon
+      Out of Crisis - Deming
       Surely You're Joking Mr. Feynman
-      Superforecasting
-      Lolita
-      # Modernist Cuisine
-      # A Pattern Language
+      Beginning of Infinity
+      Never at Rest - Isaac Newton
+      #Churchill - Walking with Destiny
       #Benjamin Franklin - Walter Isaaccon
-      The Great Gatsby
-      On Intelligence
-      80,000 Hours
-      History of Future Cities
-      The Upside of Stress
+      Organizing Genius
+      Shogun
       # The Diamond Age
-      Waking Up
-      Measure What Matters
-      Atomic Habits
+      Hard Drive - Bill Gates
       High Growth Handbook
-      The Elephant in the Brain
-      The Master Algorithm
       The Selfish Gene
-      Hitchhikers Guide to the Galaxy
+      The Black Swan
+
+
     `
 
     const bookList = books.split("\n").map(book => {
@@ -55,14 +36,7 @@ export default class Bookshelf extends Component {
     return (
       <bookshelf>
         <h1>Bookshelf</h1>
-        <inspired>
-          Inspired by{" "}
-          <a href="https://patrickcollison.com/bookshelf">
-            Patrick Collison's Bookshelf
-          </a>
-          . This is an evolving list.
-        </inspired>
-        <books>
+         <books>
           {bookList.map(({ name, highlight }) => (
             <book $highlight={highlight}>
               {highlight && "⭐ "}

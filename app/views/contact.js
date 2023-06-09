@@ -4,12 +4,12 @@ export default class Contact extends Component {
       <contact>
         <div>
           email:{" "}
-          <a href="mailto:cammarata.nick@gmail.com">cammarata.nick@gmail.com</a>
+          <a href="mailto:tollypowell0x@gmail.com">tollypowell0x@gmail.com</a>
         </div>
         <twitter>
           twitter:{" "}
-          <a $handle target="_blank" href="http://twitter.com/nicklovescode">
-            @nicklovescode
+          <a $handle target="_blank" href="http://twitter.com/tollypowell">
+            @tollypowell
           </a>{" "}
         </twitter>
       </contact>

@@ -1,1 +1,0 @@
-{"dependencies":[],"generated":{"js":"var toString = {}.toString;\n\nmodule.exports = function(it){\n  return toString.call(it).slice(8, -1);\n};"},"hash":"f112588cad897d19f601a895a4f0dd33"}

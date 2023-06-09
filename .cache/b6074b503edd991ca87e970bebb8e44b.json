@@ -1,1 +1,0 @@
-{"dependencies":[],"generated":{"js":"module.exports = {\n\ttrueFunc: function trueFunc(){\n\t\treturn true;\n\t},\n\tfalseFunc: function falseFunc(){\n\t\treturn false;\n\t}\n};"},"hash":"7554e0c08e372afe2c409dc77a5bb047"}

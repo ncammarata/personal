@@ -1,1 +1,0 @@
-{"dependencies":[],"generated":{"js":"'use strict';\nexports.base64 = false;\nexports.binary = false;\nexports.dir = false;\nexports.createFolders = true;\nexports.date = null;\nexports.compression = null;\nexports.compressionOptions = null;\nexports.comment = null;\nexports.unixPermissions = null;\nexports.dosPermissions = null;\n"},"hash":"31ea5770db9ebbd00f8b85380ca82fa2"}
